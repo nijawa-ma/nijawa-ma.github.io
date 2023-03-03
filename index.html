@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>The personal website of Nick Ward</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet"> 
+<!-- Inspiration: https://www.jeremiahshoaf.com/ -->
+</head>
+<body>
+    <div class = "row">
+        <div class = "large-12-columns">
+            <header>
+                <hr>
+                </hr>
+                <h1>
+                    Nick Ward, CFA
+                    <br>
+                    Strategy, Finance
+                    <span class = "highlight-color">
+                        <em>&</em>
+                    </span>
+                    Data
+                </h1>
+            </header>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "large-12-columns">
+            <section>
+                <h2>Experience</h2>
+                    <p>
+                        NNext, Toast, Wayfair, McKinsey & Co., Department of Foreign Affairs and Trade
+                    </p>
+            </section>
+        </div>
+    <div class = "row">
+        <div class = "large-12-columns">
+            <section>
+                <h2>Education and qualifications</h2>
+                    <p>
+                        Columbia University, MPA; University of Melbourne, BComm.; Chartered Financial Analyst
+                    </p>
+            </section>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "large-12-columns">
+            <section>
+                <h2>Technical skills</h2>
+                    <p>
+                        Python, JavaScript, SQL, Tableau, Alteryx
+                    </p>
+            </section>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "large-12-columns">
+            <section>
+                <h2>About</h2>
+                    <p>
+                        I am a former McKinsey & Company consultant with operating experience and a skillset in strategy, finance and data analysis.
+                        My experience is national and global and spans industries including asset management, artificial intelligence and machine learning, payments and eCommerce.
+                        I live in the greater Boston area with my wife and daughter and am an avid fan of the L.A. Rams, Philadelphia 76ers and Western Bulldogs (it's a long story).
+                    </p>
+            </section>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "large-12-columns">
+            <section>
+                <h2>Connect</h2>
+                    <p>
+                        <a href="https://www.linkedin.com/in/nick-ward-cfa-818789124/">LinkedIn</a>, 
+                        <a href="https://twitter.com/havethelastward">Twitter</a>
+                    </p>
+            </section>
+        </div>
+    </div>
+    <div class = "row">
+
+        <div class = "large-12-columns">
+            <footer>
+                <div class = "portrait-container">
+                    <img id = "portrait-photo" class = "portrait" src = "Nick Ward 1.jpg" alt = "Nick Ward">
+                </div>
+                <hr>
+                </hr>
+            </footer>
+        </div>
+    </div>
+    <script >
+    let image = document.getElementById("portrait-photo");
+
+    let changePhoto = function() {
+	    image.style.opacity = 1;
+        image.style.filter = 'none';
+}
+
+    let resetPhoto = function() {
+        image.style.opacity = 0.75;
+        image.style.filter = 'sepia(0.75)';
+}
+
+    image.addEventListener('mouseover', changePhoto);
+    image.addEventListener('mouseout', resetPhoto)
+    </script>
+</body>
+</html>
